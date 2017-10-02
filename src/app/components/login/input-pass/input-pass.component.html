@@ -1,0 +1,16 @@
+<mz-input-container class="col s12">
+    <i mz-icon-mdi mz-input-prefix
+      [icon]="icone">
+    </i>
+    <input mz-input
+      (blur)="trocaIcone()"
+      (focus)="trocaIcone()"
+      [label]="'Senha'"
+      [validate]="false"
+      [dataError]="'Senha inválida'"
+      [dataSuccess]="'Senha válida'"
+      id="pass-input"
+      placeholder="Digite sua senha"
+      length="150"
+      type="password">
+  </mz-input-container>
